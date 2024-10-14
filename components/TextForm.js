@@ -28,6 +28,12 @@ export default function TextForm(props) {
     const remove = () => {
         setText(text.trim().replace(/\s+/g, " "));
     }
+    // const theme = () => {
+    //     document.body.style.backgroundColor = "black";
+    // }
+    // const theme2 = () => {
+    //     document.body.style.backgroundColor = "white";
+    // }
     const [text, setText] = useState("Enter your text here");
     // text = "Homelander"; // wrong way to set text
     // setText("Homelander is great");
@@ -44,6 +50,8 @@ export default function TextForm(props) {
             <button className="btn btn-warning mx-2" onClick={toClear}>Clear</button>
             <button className="btn btn-secondary mx-2" onClick={copyText}>copy text</button>
             <button className="btn btn-info mx-2" onClick={remove}>Remove space</button>
+            {/* <button className='btn btn-success mx-2' onClick={theme}>change theme</button>
+            <button className='btn btn-warning mx-2' onClick={theme2}>white</button> */}
         </div>
         <div className="container my-2">
             <h2>your text here</h2>
