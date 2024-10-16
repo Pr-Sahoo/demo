@@ -24,7 +24,7 @@ export default function Navbar(props) {
           </form>
         </div>
       </div>
-      <div className="form-check form-switch text-light">
+      <div className="form-check form-switch text-warning">
         <input className="form-check-input" type="checkbox" role="switch" onClick={props.toogle} id="flexSwitchCheckDefault" />
           <label className="form-check-label" for="flexSwitchCheckDefault">Change theme</label>
       </div>

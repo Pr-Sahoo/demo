@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 // import About from './components/About';
+import DarkBtn from './components/DarkBtn';
+
 import React, {useState} from 'react';
 function App() {
   const [mode, setMode] = useState("dark");
@@ -18,6 +20,7 @@ function App() {
       <div className="container my-4">
       <TextForm heading="Enter text to analyze"/>
       {/* <About/> */}
+      <DarkBtn/>
       </div>
     </>
   );
